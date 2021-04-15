@@ -12,6 +12,7 @@ stages:
   - deployment: dev_deploy
     pool:
       vmImage: 'Ubuntu-latest'
+      Envoriment:
     strategy:
       runOnce:
         deploy:
