@@ -12,7 +12,6 @@ stages:
   - deployment: dev_deploy
     pool:
       vmImage: 'Ubuntu-latest'
-    environment:
     strategy:
       runOnce:
         deploy:
@@ -23,7 +22,6 @@ stages:
   - deployment: 
     pool:
       vmImage: 'Ubuntu-latest'
-    environment:
     strategy:
       runOnce:
         deploy:
