@@ -2,8 +2,7 @@ stages:
 - stage: Build
   jobs:
   - job: Build
-  TimeoutInMinutes: 180
-  CancelTimeoutInMinutes: 45
+   cancelTimeoutInMinutes: 120
     pool:
       vmImage: 'Ubuntu-16.04'
     continueOnError: true
